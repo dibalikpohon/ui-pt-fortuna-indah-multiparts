@@ -765,11 +765,11 @@ progress {
     max-width: 1140px;
   }
 }
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
-}
+} */
 :root {
   --bs-breakpoint-xs: 0;
   --bs-breakpoint-sm: 576px;
@@ -1086,8 +1086,8 @@ progress {
     width: 91.66666667%;
   }
   .col-sm-12 {
-    flex: 0 0 50%;
-    width: 50%;
+    flex: 0 0 100%;
+    width: 100%;
   }
   .offset-sm-0 {
     margin-left: 0;
@@ -1255,8 +1255,8 @@ progress {
     width: 91.66666667%;
   }
   .col-md-12 {
-    flex: 0 0 50%;
-    width: 50%;
+    flex: 0 0 100%;
+    width: 100%;
   }
   .offset-md-0 {
     margin-left: 0;
@@ -1424,8 +1424,8 @@ progress {
     width: 91.66666667%;
   }
   .col-lg-12 {
-    flex: 0 0 50%;
-    width: 50%;
+    flex: 0 0 100%;
+    width: 100%;
   }
   .offset-lg-0 {
     margin-left: 0;
@@ -7743,6 +7743,42 @@ textarea.form-control-lg {
 
 .mw-100 {
   max-width: 100% !important;
+}
+
+.vw-10{
+  width: 10vw !important; 
+}
+
+.vw-20{
+  width: 20vw !important; 
+}
+
+.vw-30{
+  width: 30vw !important; 
+}
+
+.vw-40{
+  width: 40vw !important; 
+}
+
+.vw-50{
+  width: 50vw !important; 
+}
+
+.vw-60{
+  width: 60vw !important; 
+}
+
+.vw-70{
+  width: 70vw !important; 
+}
+
+.vw-80{
+  width: 80vw !important; 
+}
+
+.vw-90{
+  width: 90vw !important; 
 }
 
 .vw-100 {
