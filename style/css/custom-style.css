@@ -1,8 +1,15 @@
 @import url("./color-pallete.css");
 
-
 .about .container{
-    padding: 50px 15px 150px !important;
+    padding: 50px 15px 0px !important;
+}
+
+.products .container{
+    padding: 50px 0px 100px !important;
+}
+
+.contactus .container{
+    padding: 20px 15px 0px !important;
 }
 
 
@@ -50,4 +57,65 @@
 .product-item-name {
   height: 1.5rem;
   background-color: rgba(var(--color-background-rgb), 0.5);
+}
+
+@media screen and (max-width:600px){
+    .fs-7{
+        font-size: 1.8rem !important;
+    }
+
+    .fs-5{
+        font-size: 1rem !important;
+    }
+
+    .fs-6{
+        font-size: 0.8rem !important;
+    }
+
+    .about-content{
+        text-align: justify;
+    }
+
+    .about-content h5{
+        text-align: center;
+    }
+
+    .identity-company{
+        width: 100%;
+        padding-left: 40px;
+        justify-content: center;
+    }
+
+    .ps-5{
+        padding: 0px 0px 20px 0px !important;
+    }
+
+    .col-8{
+        width: 70%;
+    }
+
+    .col-2, 
+    .col-1{
+        width: 20%;
+    }
+
+    .address-company{
+        margin-bottom: 0px !important;
+    }
+
+    .location-company{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .about-content{
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-content{
+        text-align: justify;
+    }
 }
