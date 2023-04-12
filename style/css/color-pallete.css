@@ -15,3 +15,10 @@
     --color-leafgreen: #ABCA52;
     --color-leafdarkgreen: #779944;
 }
+
+.title-part-1{
+    color: var(--color-secondary)
+}
+.title-part-2{
+    color: var(--color-leafgreen);
+}
