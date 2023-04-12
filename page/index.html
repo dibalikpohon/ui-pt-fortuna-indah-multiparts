@@ -11,18 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/css/custom-style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar navbar-expand-lg bg-light " data-bs-theme="light">
+    <!-- Header start -->
+    <header id="navBar" class="navbar navbar-expand-lg bg-light fixed-top " data-bs-theme="light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="img-fluid" style="height:2.5em" src="../assets/LOGOFIM.png"></a>
+            <!-- create button collapse -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarText" aria-controls="#navBarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- button collapse done -->
+            <!-- navigation start-->
             <div class="collapse navbar-collapse ms-auto" id="navBarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-5">
@@ -36,11 +39,12 @@
                     </li>
                 </ul>
             </div>
+            <!-- navigation finish -->
         </div>
     </header>
-
+    <!-- Header finish -->
     <article>
-        <!-- carousel -->
+        <!-- carousel start -->
         <section id="idCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="z-1 position-absolute text-center top-50 start-50 translate-middle-x text-light">
                 <div class="align-items-center">
@@ -61,13 +65,16 @@
                 </div>
             </div>
         </section>
+        <!-- carousel finish -->
         <!-- About Section -->
         <section id="about" class="about mt-5">
+            <!-- about company container -->
             <div class="container">
                 <div class="text-center top-text">
                     <h1 class="title-part-1 fw-semibold">TENTANG <span class="title-part-2">KAMI</span></h1>
                 </div>
                 <div class="row about-content">
+                    <!-- about campany start-->
                     <div class="col-sm-12 col-md-12 col-lg-6 about-left-side">
                         <h5 class="fw-semibold">PT.FORTUNA INDAH MULTIPARTS</h5>
                         <p>
@@ -91,10 +98,14 @@
                             samanya.
                         </p>
                     </div>
+                    <!-- about company finsih-->
+                    <!--image about company-->
                     <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center about-right-side" about-rigth>
                         <img class="img-fluid" src="../assets/example.jpg">
                     </div>
+                    <!--close image about company-->
                 </div>
+                <!--visi misi of company-->
                 <div class="row mt-5">
                     <div class="col-5 col-sm-5 fs-3 fw-semibold text-end">Visi</div>
                     <div class="col-2 col-sm- fs-3 fw-semibold text-center">|</div>
@@ -113,10 +124,12 @@
                         </ol>
                     </div>
                 </div>
-                </div>
+                <!--close visi misi of company-->
             </div>
+                <!--about company close-->
         </section>
     </article>
+    <!--create contact us-->
     <section id="contactus" class="contactus pb-4">
         <div class="container">
             <div class="text-center top-text">
@@ -139,6 +152,7 @@
                         <p><span class="pe-3"><i class="fa-solid fa-envelope"></i></span>fortunamultiparts@gmail.com</p>
                    </div>
                 </div>
+                <!-- contianer of maps-->
                 <div class="col-6 col-sm-6">
                     <div class="info-map">
                         <div class="google-map">
@@ -152,11 +166,13 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
+                <!--close container of maps-->
                 </div>
             </div>
         </div>
     </section>
+    <!--finish create contact us-->
     <footer>
 
     </footer>
