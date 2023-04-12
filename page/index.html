@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="../style/css/color-pallete.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/css/custom-style.css">
 </head>
 <body>
@@ -24,35 +26,54 @@
             <div class="collapse navbar-collapse ms-auto" id="navBarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-5">
-                        <a class="nav-link fw-bold" aria-current="page" href="#"><span class="pe-1"><i class="fa-solid fa-address-card"></i></span>TENTANG</a>
+                        <a class="nav-link fw-semibold" aria-current="page" href="#"><span class="pe-3"><i class="fa-solid fa-address-card"></i></span>TENTANG</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link fw-bold" href="#"><span class="pe-1"><i class="fa-solid fa-screwdriver-wrench"></i></span>PRODUK</a>
+                        <a class="nav-link fw-semibold" href="#"><span class="pe-3"><i class="fa-solid fa-screwdriver-wrench"></i></span>PRODUK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#"><span class="pe-1"><i class="fa-solid fa-address-book"></i></span>HUBUNGI KAMI</a>
+                        <a class="nav-link fw-semibold" href="#"><span class="pe-3"><i class="fa-solid fa-address-book"></i></span>HUBUNGI KAMI</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <!-- carousel -->
     <article>
+        <!-- carousel -->
         <section id="idCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="z-1 position-absolute top-50 start-50 translate-middle">
-                <p class="text-center fs-1 fw-bold">PT.Fortuna Indah Multiparts</p>
-                <p class="text-center fw-semibold">Penyedia Perkakas dan Suku Cadang Terbaik</p>
+            <div class="z-1 position-absolute text-center top-50 start-50 translate-middle-x text-light">
+                <div class="align-items-center">
+                    <p class="text-center fw-bolder" style="font-size: 2.5em;">PT.FORTUNA INDAH MULTIPARTS</p>
+                    <p class="text-center fw-semibold">PENYEDIA PERKAKAS DAN SUKU CADANG TERBAIK</p>
+                    <button type="button" class="btn btn-primary rounded-pill text-light fw-bold fs-6 p-3">JELAJAHI PRODUK</button>
+                </div>
             </div>
-            <div class="carousel-inner z-n1">
-                <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-inner z-n1 bg-black">
+                <div class="carousel-item active" data-bs-interval="3000">
                     <img src="../assets/example.jpg" style="opacity: 0.5; height: 70vh;" class="d-block w-100 object-fit-cover" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <img src="../assets/example1.jpg" style="opacity: 0.5; height: 70vh;" class="d-block w-100 object-fit-cover" alt="...">
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <img src="../assets/example2.jpg" style="opacity: 0.5; height:70vh;" class="d-block w-100 object-fit-cover" alt="...">
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="aboutus" class="mt-5">
+            <div class="container">
+                <div class="text-center top-text">
+                    <h1 class="fw-semibold">TENTANG KAMI</h1>
+                </div>
+                <div class="row about-contet">
+                    <div class="col-sm-12 col-md-12 col-lg-12 about-left-side">
+                        <h3>PT.FORTUNA INDAH MULTIPARTS</h3>
+                    </div>
+                    <div class="col-md-12 col-lg-12 about-right-side" about-rigth>
+                        <img class="vw-25" src="../assets/example.jpg">
+                    </div>
                 </div>
             </div>
         </section>

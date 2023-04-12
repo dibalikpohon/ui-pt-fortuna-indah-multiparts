@@ -1086,8 +1086,8 @@ progress {
     width: 91.66666667%;
   }
   .col-sm-12 {
-    flex: 0 0 auto;
-    width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
   }
   .offset-sm-0 {
     margin-left: 0;
@@ -1255,8 +1255,8 @@ progress {
     width: 91.66666667%;
   }
   .col-md-12 {
-    flex: 0 0 auto;
-    width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
   }
   .offset-md-0 {
     margin-left: 0;
@@ -1424,8 +1424,8 @@ progress {
     width: 91.66666667%;
   }
   .col-lg-12 {
-    flex: 0 0 auto;
-    width: 100%;
+    flex: 0 0 50%;
+    width: 50%;
   }
   .offset-lg-0 {
     margin-left: 0;
@@ -3038,12 +3038,12 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-color: #252525;
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-border-color: var(--color-primary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-bg: var(--color-primary-variant);
+  --bs-btn-hover-border-color: var(--color-primary-variant);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
@@ -3948,7 +3948,7 @@ textarea.form-control-lg {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-hover-color: rgba(var(--color-lightblue-rgb), 1);
+  --bs-navbar-hover-color: rgba(var(--color-secondary-rgb), 1);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-padding-y: 0.3125rem;
@@ -8068,15 +8068,15 @@ textarea.form-control-lg {
 }
 
 .mt-3 {
-  margin-top: 1rem !important;
-}
-
-.mt-4 {
   margin-top: 1.5rem !important;
 }
 
+.mt-4 {
+  margin-top: 2.5rem !important;
+}
+
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 4rem !important;
 }
 
 .mt-auto {
@@ -8466,27 +8466,27 @@ textarea.form-control-lg {
 }
 
 .fw-light {
-  font-weight: 300 !important;
+  font-weight: 200 !important;
 }
 
 .fw-normal {
-  font-weight: 400 !important;
-}
-
-.fw-medium {
   font-weight: 500 !important;
 }
 
-.fw-semibold {
+.fw-medium {
   font-weight: 600 !important;
 }
 
-.fw-bold {
+.fw-semibold {
   font-weight: 700 !important;
 }
 
+.fw-bold {
+  font-weight: 800 !important;
+}
+
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 900 !important;
 }
 
 .lh-1 {
