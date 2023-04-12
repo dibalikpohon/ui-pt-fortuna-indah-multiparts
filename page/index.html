@@ -116,8 +116,86 @@
                 </div>
             </div>
         </section>
+        <!-- Produk section -->
+        <section id="products" class="mt-5 bg-dark">
+          <div class="container">
+            <div class="text-center top-text">
+              <h1 class="fw-semibold text-light">PRODUK</h1>
+              <h2 class="fw-light text-light">Kualitas adalah nomor 1</h2>
+              <div class="d-flex flex-row">
+                <button id="btn-product-all" data-fim-catid="0" class="btn-product btn btn-outline-primary me-3 rounded-pill active" type="button">Semua</button>
+                <button id="btn-product-bor" data-fim-catid="1" class="btn-product btn btn-outline-primary me-3 rounded-pill" type="button">Bor</button>
+                <button id="btn-product-aki" data-fim-catid="2" class="btn-product btn btn-outline-primary me-3 rounded-pill" type="button">Aki</button>
+                <button id="btn-product-spp" data-fim-catid="3" class="btn-product btn btn-outline-primary me-3 rounded-pill" type="button">Sparepart</button>
+              </div>
+              <div id="product-list" class="d-flex flex-row flex-wrap container-fluid mt-3">
+              </div>
+            </div>
+          </div>
+        </section>
     </article>
     <script src="https://kit.fontawesome.com/1f38455093.js" crossorigin="anonymous"></script>
     <script src="../script/js/bootstrap.bundle.js"></script>
+    <script src="../script/js/custom-component.js"></script>
+    <script>
+      const btnProducts = document.getElementsByClassName("btn-product");
+      const productList = document.getElementById("product-list");
+      let dummyObject = {
+        "1": [
+          {
+            name: "Nasi goreng",
+            imageSrc: "../assets/example.jpg",
+          },
+        ],
+        "2": [
+          {
+            name: "sayuran",
+            imageSrc: "../assets/example1.jpg",
+          },
+          {
+            name: "nasi goreng",
+            imageSrc: "../assets/example.jpg"
+          }
+        ],
+        "3": [
+          {
+            name: "balon terbang",
+            imageSrc: "../assets/example2.jpg",
+          },
+          {
+            name: "Sayuran",
+            imageSrc: "../assets/example1.jpg"
+          }
+        ]
+      };
+      dummyObject = {
+        ...dummyObject,
+        "0": Object.values(dummyObject).flat(),
+      }
+      window.onload = () => {
+        const products = dummyObject["0"];
+        for (const v of products) {
+          const product = productItem(v.name, v.imageSrc);
+          productList.appendChild(product);
+        }
+      };
+      for (let i = 0; i < btnProducts.length; i++) {     
+        btnProducts[i].addEventListener('click', (e) => {
+          // clear inside of product-list id
+          productList.innerHTML = '';
+          const elem = e.target;
+          const id = elem.getAttribute("data-fim-catid");
+          for (let j = 0; j < btnProducts.length; j++) {
+            btnProducts[j].classList.remove("active");
+          }
+          elem.classList.add("active");
+          const products = dummyObject[id];
+          for (const v of products) {
+            const product = productItem(v.name, v.imageSrc);
+            productList.appendChild(product);
+          }
+        });
+      }
+    </script>
 </body>
 </html>

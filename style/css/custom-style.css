@@ -8,3 +8,19 @@
 * {
     font-family: "Raleway";
 }
+
+.product-item {
+  width:  10rem;
+  height: 12.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-item-img {
+  z-index: 2;
+}
+
+.product-item-name {
+  height: 1.5rem;
+  background-color: rgba(var(--color-background-rgb), 0.5);
+}
