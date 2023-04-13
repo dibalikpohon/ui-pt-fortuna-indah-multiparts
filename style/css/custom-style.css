@@ -127,8 +127,8 @@ p{
         width: 40%;
     }
     .product-item {
-        width:  16rem;
-        height: 20rem;
+        width:  14rem;
+        height: 16rem;
       }
     .visimisi-flex {
         display: flex;
@@ -155,6 +155,16 @@ p{
     .about .container{
         padding: 50px 40px 0px !important;
     }
+    .product-item {
+        width:  16rem;
+        height: 18rem;
+    }
+}
 
+@media (min-width: 992px) {
+    .product-item {
+        width:  20rem;
+        height: 22rem;
+    }
 }
 
