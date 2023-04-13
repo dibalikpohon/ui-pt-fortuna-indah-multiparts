@@ -54,9 +54,9 @@ p{
   row-gap: 2rem;
 }
 
-.visimisi-flex>.item {
-  width: 80%;
-}
+/* .visimisi-flex>.item { */
+/*   width: 80%; */
+/* } */
 
 .text-visi{
     text-align: justify;
@@ -136,9 +136,8 @@ p{
         justify-content: space-between;
         row-gap: 2rem;
     }
-
     .visimisi-flex>.item {
-        width: 50%;
+        width: 49%;
     }
 }
 
