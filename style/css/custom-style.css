@@ -1,5 +1,7 @@
 @import url("./color-pallete.css");
 
+
+
 .about .container{
     padding: 50px 15px 0px !important;
 }
@@ -50,6 +52,16 @@
   width: 50%;
 }
 
+.text-visi{
+    text-align: justify;
+    padding-right: 20px;
+}
+.text-misi{
+    padding-right: 20px;
+    text-align: justify;
+}
+
+
 * {
     font-family: "Raleway";
 }
@@ -78,75 +90,48 @@
     z-index: 2;
 }
 
-@media screen and (max-width:600px){
-    .fs-7{
-        font-size: 1.8rem !important;
-    }
+.img-company{
+    width: 100%;
+}
 
-    .fs-5{
-        font-size: 1rem !important;
-    }
+.logo-company-footer{
+    padding: 0;
+}
 
-    .fs-6{
-        font-size: 0.8rem !important;
-    }
 
+.identity-company{
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 576px) { 
+    .identity-company{
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+    }
     .about-content{
         text-align: justify;
     }
-
-    .about-content h5{
-        text-align: center;
+    .img-company{
+        width: 40%;
     }
+}
 
-    .identity-company{
-        width: 100%;
-        padding-left: 40px;
-        justify-content: center;
-    }
 
-    .ps-5{
-        padding: 0px 0px 20px 0px !important;
-    }
-
-    .col-8{
+@media (min-width: 768px) { 
+    .img-company{
         width: 70%;
     }
 
-    .col-2, 
-    .col-1{
-        width: 20%;
+    .contactus .container{
+        padding: 10px 40px 10px !important;
     }
 
-    .address-company{
-        margin-bottom: 0px !important;
+    .about .container{
+        padding: 50px 40px 0px !important;
     }
-
-    .location-company{
-        width: 100%;
-    }
-
-    .visimisi-flex {
-        display: flex;
-        flex-flow: column nowrap;
-        column-gap: 2rem;
-    }
-
-    .visimisi-flex>.item {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:800px){
     .about-content{
         text-align: justify;
     }
 }
 
-@media screen and (max-width:1000px){
-    .about-content{
-        text-align: justify;
-    }
-}
