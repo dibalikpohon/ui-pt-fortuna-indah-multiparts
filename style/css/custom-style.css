@@ -1,9 +1,15 @@
 @import url("./color-pallete.css");
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-
-
-
-
+ol, ul {
+    padding-left: 1rem;
+}
+p{
+    margin-bottom: 0;
+}
 .about .container{
     padding: 50px 15px 0px !important;
 }
