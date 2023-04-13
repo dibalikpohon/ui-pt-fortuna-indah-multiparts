@@ -155,10 +155,9 @@
                     <hr class="text-center my-3 mx-3 mb-5 w-25 border-secondary border-top border-2 ">
                 </div>
               <div class="d-flex flex-row">
-                <button id="btn-product-all" data-fim-catid="0" class="btn-product btn btn-primary rounded-pill text-light m-1 active" type="button">Semua</button>
-                <button id="btn-product-bor" data-fim-catid="1" class="btn-product btn btn-primary rounded-pill text-light m-1" type="button">Bor</button>
-                <button id="btn-product-aki" data-fim-catid="2" class="btn-product btn btn-primary rounded-pill text-light m-1" type="button">Aki</button>
-                <button id="btn-product-spp" data-fim-catid="3" class="btn-product btn btn-primary rounded-pill text-light m-1" type="button">Sparepart</button>
+                <button data-fim-catid="0" class="btn-product btn btn-primary rounded-pill text-light m-1 active" type="button">Semua</button>
+                <button data-fim-catid="1" class="btn-product btn btn-primary rounded-pill text-light m-1" type="button">Komponen Kendaraan</button>
+                <button data-fim-catid="2" class="btn-product btn btn-primary rounded-pill text-light m-1" type="button">Alat-alat</button>
               </div>
               <div id="product-list" class="d-flex flex-row flex-wrap container-fluid mt-3">
               </div>
@@ -228,43 +227,12 @@
     <script src="https://kit.fontawesome.com/1f38455093.js" crossorigin="anonymous"></script>
     <script src="../script/js/bootstrap.bundle.js"></script>
     <script src="../script/js/custom-component.js"></script>
-    <script>
+    <script src="../script/js/datas.js"></script>
+     <script>
       const btnProducts = document.getElementsByClassName("btn-product");
       const productList = document.getElementById("product-list");
-      let dummyObject = {
-        "1": [
-          {
-            name: "Nasi goreng",
-            imageSrc: "../assets/example.jpg",
-          },
-        ],
-        "2": [
-          {
-            name: "sayuran",
-            imageSrc: "../assets/example1.jpg",
-          },
-          {
-            name: "nasi goreng",
-            imageSrc: "../assets/example.jpg"
-          }
-        ],
-        "3": [
-          {
-            name: "balon terbang",
-            imageSrc: "../assets/example2.jpg",
-          },
-          {
-            name: "Sayuran",
-            imageSrc: "../assets/example1.jpg"
-          }
-        ]
-      };
-      dummyObject = {
-        ...dummyObject,
-        "0": Object.values(dummyObject).flat(),
-      }
       window.onload = () => {
-        const products = dummyObject["0"];
+        const products = productData["0"];
         for (const v of products) {
           const product = productItem(v.name, v.imageSrc);
           productList.appendChild(product);
@@ -280,7 +248,7 @@
             btnProducts[j].classList.remove("active");
           }
           elem.classList.add("active");
-          const products = dummyObject[id];
+          const products = productData[id];
           for (const v of products) {
             const product = productItem(v.name, v.imageSrc);
             productList.appendChild(product);
