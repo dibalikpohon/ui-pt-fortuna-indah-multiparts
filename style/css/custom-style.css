@@ -2,6 +2,8 @@
 
 
 
+
+
 .about .container{
     padding: 50px 15px 0px !important;
 }
@@ -85,9 +87,10 @@
 .sticky {
     position: fixed;
     top: 0;
+    right: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .img-company{
@@ -102,6 +105,10 @@
 .identity-company{
     margin-left: 3rem;
     margin-bottom: 1.5rem;
+}
+
+.title-about-content{
+    text-align: start;
 }
 
 @media (min-width: 576px) { 
