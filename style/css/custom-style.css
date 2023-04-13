@@ -49,14 +49,13 @@ p{
 
 .visimisi-flex {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
+  row-gap: 2rem;
 }
 
 .visimisi-flex>.item {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 50%;
+  width: 80%;
 }
 
 .text-visi{
@@ -131,6 +130,16 @@ p{
         width:  16rem;
         height: 20rem;
       }
+    .visimisi-flex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+    }
+
+    .visimisi-flex>.item {
+        width: 50%;
+    }
 }
 
 
