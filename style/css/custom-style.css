@@ -8,9 +8,6 @@
     padding: 50px 15px 0px !important;
 }
 
-.products .container{
-    padding: 50px 0px 100px !important;
-}
 
 .contactus .container{
     padding: 20px 15px 0px !important;
@@ -69,10 +66,7 @@
 }
 
 .product-item {
-  width:  10rem;
-  height: 12.5rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  width:  100%;
 }
 
 .product-item-img {
@@ -122,12 +116,16 @@
     .img-company{
         width: 40%;
     }
+    .product-item {
+        width:  16rem;
+        height: 20rem;
+      }
 }
 
 
 @media (min-width: 768px) { 
     .img-company{
-        width: 70%;
+        width: 65%;
     }
 
     .contactus .container{

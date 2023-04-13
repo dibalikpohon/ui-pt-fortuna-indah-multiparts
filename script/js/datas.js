@@ -7,24 +7,24 @@ const product = (name, imageSrc) => (
 
 let productData = {
   "1": [
-    product("Aki", "../assets/example.jpg")
-    , product("Air aki", "../assets/example1.jpg")
-    , product("Filter Udara", "../assets/example2.jpg")
-    , product("Filter Oli", "../assets/example.jpg")
-    , product("O Ring", "../assets/example1.jpg")
-    , product("Seal", "../assets/example2.jpg")
-    , product("Gasket", "../assets/example.jpg")
-    , product("Piston", "../assets/example1.jpg")
-    , product("Air radiator", "../assets/example2.jpg")
-    , product("Karet tambal tubeless", "../assets/example.jpg")
-    , product("Oli", "../assets/example2.jpg")
+    product("Aki", "../assets/aki.jpg")
+    , product("Air aki", "../assets/air-aki.png")
+    , product("Filter Udara", "../assets/filter-udara.jpg")
+    , product("Filter Oli", "../assets/filter-oli.jpg")
+    , product("O Ring", "../assets/o-ring.webp")
+    , product("Seal", "../assets/seal.webp")
+    , product("Gasket", "../assets/gasket.jpg")
+    , product("Piston", "../assets/piston.jpg")
+    , product("Air radiator", "../assets/air-radiator.jpg")
+    , product("Karet tambal tubeless", "../assets/karet-tambel.jpg")
+    , product("Oli", "../assets/oli.jpg")
   ],
   "2": [
-    product("Gerinda", "../assets/example1.jpg")
-    , product("Bor", "../assets/example2.jpg")
-    , product("Ragum", "../assets/example.jpg")
-    , product("Kunci Momen", "../assets/example1.jpg")
-    , product("Kunci Roda", "../assets/example2.jpg")
+    product("Gerinda", "../assets/gerinda.jpg")
+    , product("Bor", "../assets/bor.jpg")
+    , product("Ragum", "../assets/ragum.jpg")
+    , product("Kunci Momen", "../assets/kunci-momen.jpg")
+    , product("Kunci Roda", "../assets/kunci-roda.webp")
   ]
 }
 
