@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- Header start -->
-    <header id="navBar" class="navbar navbar-expand-lg bg-light fixed-top " data-bs-theme="light">
+    <header id="navBar" class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="img-fluid" style="height:2.5em" src="../assets/LOGOFIM.png"></a>
             <!-- create button collapse -->
@@ -58,19 +58,19 @@
             </div>
             <div class="carousel-inner z-n1 bg-black">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="../assets/example.jpg" style="opacity: 0.5; height: 70vh;" class="d-block w-100 object-fit-cover" alt="...">
+                    <img src="../assets/photo1.jpg" style="opacity: 0.5; height: 70vh;" class="d-block w-100 object-fit-cover" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="../assets/example1.jpg" style="opacity: 0.5; height: 70vh;" class="d-block w-100 object-fit-cover" alt="...">
+                    <img src="../assets/photo2.jpg" style="opacity: 0.5; height: 70vh;" class="d-block w-100 object-fit-cover" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="../assets/example2.jpg" style="opacity: 0.5; height:70vh;" class="d-block w-100 object-fit-cover" alt="...">
+                    <img src="../assets/photo3.jpg" style="opacity: 0.5; height:70vh;" class="d-block w-100 object-fit-cover" alt="...">
                 </div>
             </div>
         </section>
         <!-- carousel finish -->
         <!-- About Section -->
-        <section id="about" class="about mt-5">
+        <section id="about" class="about">
             <!-- about company container -->
             <div class="container">
                 <div class="text-center top-text">
@@ -109,7 +109,7 @@
                     <!-- about company finsih-->
                     <!--image about company-->
                     <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center about-right-side" about-rigth>
-                        <img class="img-fluid" src="../assets/example.jpg">
+                        <img class="vw-20" src="../assets/photo3.jpg">
                     </div>
                     <!--close image about company-->
                 </div>
@@ -280,6 +280,20 @@
           }
         });
       }
+    </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        const navbar = document.querySelector('#navBar');
+        const sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }        
+        }
     </script>
 </body>
 </html>
