@@ -7,9 +7,11 @@ ol, ul, dl {
 ol, ul {
     padding-left: 1rem;
 }
+
 p{
     margin-bottom: 0;
 }
+
 .about .container{
     padding: 50px 15px 0px !important;
 }
@@ -94,7 +96,8 @@ p{
 }
 
 .img-company{
-    width: 100%;
+    padding-top: 20px;
+    width: 80%;
 }
 
 .logo-company-footer{
@@ -111,14 +114,16 @@ p{
     text-align: start;
 }
 
+.about-content{
+    text-align: justify;
+}
+
 @media (min-width: 576px) { 
     .identity-company{
         margin-left: 0;
         margin-bottom: 1.5rem;
     }
-    .about-content{
-        text-align: justify;
-    }
+
     .img-company{
         width: 40%;
     }
@@ -141,8 +146,6 @@ p{
     .about .container{
         padding: 50px 40px 0px !important;
     }
-    .about-content{
-        text-align: justify;
-    }
+
 }
 
