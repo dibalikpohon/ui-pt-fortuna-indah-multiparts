@@ -139,9 +139,8 @@ p{
         justify-content: space-between;
         row-gap: 2rem;
     }
-
     .visimisi-flex>.item {
-        width: 50%;
+        width: 49%;
     }
 }
 
