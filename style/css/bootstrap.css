@@ -3177,8 +3177,8 @@ textarea.form-control-lg {
   --bs-btn-color: var(--color-secondary);
   --bs-btn-border-color: var(--color-secondary);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0d6efd;
-  --bs-btn-hover-border-color: #0d6efd;
+  --bs-btn-hover-bg: var(--color-secondary);
+  --bs-btn-hover-border-color: var(--color-secondary);
   --bs-btn-focus-shadow-rgb: 13, 110, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: var(--color-secondary);
@@ -4011,7 +4011,7 @@ textarea.form-control-lg {
   list-style: none;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: var(--bs-navbar-active-color);
+  color: var(--color-secondary);
 }
 .navbar-nav .dropdown-menu {
   position: static;

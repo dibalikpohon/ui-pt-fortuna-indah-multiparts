@@ -3,7 +3,7 @@ const productItem = (name, imageSrc) => {
   component.classList = "shadow product-item";
   
   const nameOverlay = document.createElement("div");
-  nameOverlay.classList = "product-item-name z-2 w-auto h-auto mx-auto position-absolute p-2 text-light"
+  nameOverlay.classList = "product-item-name z-2 position-absolute text-light"
   nameOverlay.innerHTML = name;
 
   const imageItem = document.createElement("img");

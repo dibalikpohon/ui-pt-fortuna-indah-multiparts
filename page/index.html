@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse ms-auto" id="navBarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-5">
-                        <a class="nav-link fw-semibold" aria-current="page" href="#about"><span class="pe-3"><i class="fa-solid fa-address-card"></i></span>TENTANG</a>
+                        <a class="nav-link fw-semibold" aria-current="page" href="#about" id="nav_about"><span class="pe-3"><i class="fa-solid fa-address-card"></i></span>TENTANG</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link fw-semibold" href="#products"><span class="pe-3"><i class="fa-solid fa-screwdriver-wrench"></i></span>PRODUK</a>
+                        <a class="nav-link fw-semibold" href="#products" id="nav_products"><span class="pe-3"><i class="fa-solid fa-screwdriver-wrench"></i></span>PRODUK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="#contactus"><span class="pe-3"><i class="fa-solid fa-address-book"></i></span>HUBUNGI KAMI</a>
+                        <a class="nav-link fw-semibold" href="#contact" id="nav_contact"><span class="pe-3" ><i class="fa-solid fa-address-book"></i></span>HUBUNGI KAMI</a>
                     </li>
                 </ul>
             </div>
@@ -172,7 +172,7 @@
         </section>
     </article>
     <!--create contact us-->
-    <section id="contactus" class="contactus mt-3 pb-3">
+    <section id="contact" class="contact mt-3">
         <div class="container">
             <div class="text-center top-text">
                 <h1 class="title-part-1 fw-semibold">HUBUNGI <span class="title-part-2">KAMI</span></h1>
@@ -185,12 +185,12 @@
         </div>
         <div class="container overflow-hidden">
             <div class="row">
-                <div class="col-12 col-sm-6 identity-company">
-                    <div class="row ">
+                <div class="col-12 col-sm-6 my-auto identity-company">
+                    <div class="row title-company-footer">
                         <div class="col-1 col-sm-1 logo-company-footer"><img src="../assets/LOGOFIM.png" alt="" class="w-100" style="padding-right: 0px;"></div>
                         <div class="col-8 col-sm-8 my-auto name-company"><h4 class="fw-bold">PT.FORTUNA INDAH MULTIPARTS</h4></div>
                     </div>
-                   <div class="row d-flex align-items-center">
+                   <div class="row address-company-footer d-flex align-items-center">
                         <div class="col-1 col-sm-1 text-center"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="col-8 col-sm-8">
                             <p class="address-company"> Harco Plaza Jembatan Merah
@@ -269,11 +269,11 @@
         const sticky = navbar.offsetTop;
 
         function myFunction() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }        
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }  
         }
     </script>
 </body>
