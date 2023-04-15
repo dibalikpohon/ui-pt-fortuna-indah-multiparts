@@ -120,6 +120,14 @@ p{
     text-align: justify;
 }
 
+.title-part-1{
+    color: var(--color-primary)
+}
+
+.title-part-2{
+    color: var(--color-secondary);
+}
+
 @media (min-width: 576px) { 
     .identity-company{
         margin-left: 0;
